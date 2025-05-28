@@ -40,6 +40,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::cookie.cookie"
+    },
+    "token": {
+      "type": "string"
     }
   }
 }
