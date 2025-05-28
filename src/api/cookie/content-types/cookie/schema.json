@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cookies",
+  "info": {
+    "singularName": "cookie",
+    "pluralName": "cookies",
+    "displayName": "Cookie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "essential",
+        "analytics",
+        "marketing",
+        "preferences",
+        "other"
+      ]
+    },
+    "duration": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
+}

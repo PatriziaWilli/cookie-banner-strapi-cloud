@@ -4,7 +4,8 @@
   "info": {
     "singularName": "client",
     "pluralName": "clients",
-    "displayName": "client"
+    "displayName": "client",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,33 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "site_url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "client_status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "suspended",
+        "blocked",
+        "other"
+      ]
+    },
+    "api_token": {
+      "type": "uid",
+      "targetField": "site_url"
+    },
+    "cookie_banner_config_url": {
+      "type": "string"
+    },
+    "cookies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cookie.cookie"
     }
   }
 }
